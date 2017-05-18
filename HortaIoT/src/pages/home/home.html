@@ -1,0 +1,29 @@
+<ion-content padding>
+  <div class="centro">
+    <ion-label class='titulo' text-center>Estação de controle</ion-label>
+    <p>
+      <button  ion-button  medium icon-left color="" (click)='irrigar();' block>
+        <ion-icon name="water" ></ion-icon> Ligar sistema de irrigação
+      </button>
+
+    </p>
+    <p>
+      <button  ion-button  medium icon-left color="danger" (click)='medirTemp();' block>
+        <ion-icon name="thermometer"></ion-icon>
+        Temperatura:  {{temp}}
+      </button>
+    </p>
+    <p>
+      <button  ion-button  medium icon-left color="light" (click)='medirUmidAr();' block>
+        <ion-icon name="rainy"></ion-icon>
+        Umidade do ar:  {{umAr}}
+      </button>
+    </p>
+    <p>
+      <button  ion-button  medium icon-left color="secondary" (click)='medirUmidTerra();' block>
+        <ion-icon name="analytics"></ion-icon>
+        Umidade do solo:  {{umSolo}}
+      </button>
+    </p>
+  </div>
+</ion-content>
